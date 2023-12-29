@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 
 import "./globals.css";
+import { dark } from "@clerk/themes";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,7 +15,9 @@ export const metadata: Metadata = {
   title: "LPAonFire",
   description: "LPAonFire es una web para la gestion de eventos.",
   icons: {
-    icon: "/assets/images/logo.svg",
+    //icon: "/assets/images/logo.svg",
+    icon: "/assets/images/favicon.png",
+    //icon: "favicon.png",
   },
 };
 
@@ -24,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+      }}
+    >
       <html lang="en">
         <body className={poppins.variable}>{children}</body>
       </html>

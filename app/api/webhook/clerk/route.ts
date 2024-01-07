@@ -9,6 +9,9 @@ console.log("route.ts:line 8 ENTERED WEBHOOK!!!!!");
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
+
+  console.log("route.ts:line 8 ENTERED WEBHOOK 2222!!!!!");
+
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET;
 
   if (!WEBHOOK_SECRET) {

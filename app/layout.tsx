@@ -10,7 +10,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",
 });
-console.log("me cagoen toooo!!!");
+
 export const metadata: Metadata = {
   title: "LPAonFire",
   description: "LPAonFire es una web para la gestion de eventos.",

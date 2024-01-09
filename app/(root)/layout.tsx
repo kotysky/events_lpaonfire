@@ -1,6 +1,6 @@
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
-
+console.log("me cagoen toooo!!!");
 export default function RootLayout({
   children,
 }: {

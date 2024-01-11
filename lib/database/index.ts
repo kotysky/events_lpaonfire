@@ -21,6 +21,8 @@ export const connectToDatabase = async () => {
     });
 
   cached.conn = await cached.promise;
+
+  console.log("La ostia");
   if (cached.conn) {
     console.log("Connected!");
   }

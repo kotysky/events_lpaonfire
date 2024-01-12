@@ -9,7 +9,7 @@ export interface IEvent extends Document {
   imageUrl: string;
   startDateTime: Date;
   endDateTime: Date;
-  price?: string;
+  price: string;
   isFree: boolean;
   url?: string;
   category: { _id: string; name: string }; // Assuming you want to store either the ObjectId or the string representation of it
@@ -27,7 +27,7 @@ const EventSchema = new Schema({
   price: { type: String },
   isFree: { type: Boolean, default: false },
   url: { type: String },
-  catgory: { type: Schema.Types.ObjectId, ref: "Category" },
+  category: { type: Schema.Types.ObjectId, ref: "C" },
   organizer: { type: Schema.Types.ObjectId, ref: "User" },
 });
 

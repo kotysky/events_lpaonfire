@@ -8,7 +8,7 @@ import Category from "../database/models/category.model";
 export const createCategory = async ({ categoryName }: CreateCategoryParams) => {
   try {
     await connectToDatabase();
-    console.log("Createcategories");
+
     const newCategory = await Category.create({ name: categoryName });
 
     return JSON.parse(JSON.stringify(newCategory));
@@ -20,7 +20,7 @@ export const createCategory = async ({ categoryName }: CreateCategoryParams) => 
 export const getAllCategories = async () => {
   try {
     await connectToDatabase();
-    console.log("Allcategories");
+
     const categories = await Category.find();
 
     return JSON.parse(JSON.stringify(categories));

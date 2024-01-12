@@ -28,9 +28,10 @@ import { Checkbox } from "../ui/checkbox";
 import CreateEvent from "@/app/(root)/events/create/page";
 import { Router } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { createEvent } from "@/lib/actions/event.actions";
 
 type EventFormProps = {
-  userId: String;
+  userId: string;
   type: "Create" | "Update";
 };
 

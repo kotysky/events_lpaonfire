@@ -247,7 +247,7 @@ const EventForm = ({ userId, type }: EventFormProps) => {
                 <FormControl>
                   <div className="flex-center h-[54px] w-full overflow-hidden rounded-full bg-primary-50 px-4 py-2">
                     <Image
-                      src="/assets/icons/dollar.svg"
+                      src="/assets/icons/euro-24.png"
                       alt="dollar"
                       width={24}
                       height={24}

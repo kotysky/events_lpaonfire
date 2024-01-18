@@ -1,4 +1,5 @@
 import Collection from "@/components/shared/Collection";
+import Search from "@/components/shared/Search";
 import { Button } from "@/components/ui/button";
 import { getAllEvents } from "@/lib/actions/event.actions";
 import Image from "next/image";
@@ -40,7 +41,10 @@ export default async function Home() {
         <h2 className="h2-bold">
           Disfruta de <br /> toda clase de experiencias
         </h2>
-        <div className="flex w-full flex-col gap-5 md:flex-row">Busqueda Categorías Filtros</div>
+        <div className="flex w-full flex-col gap-5 md:flex-row">
+          <Search />
+          Filtros busqueda
+        </div>
         <Collection
           data={events?.data}
           emptyTitle="Sin eventos encontrados"

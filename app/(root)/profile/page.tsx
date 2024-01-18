@@ -13,6 +13,10 @@ const ProfilePage = async () => {
   const orderedEvents = orders?.data.map((order: IOrder) => order.event) || [];
 
   const organizedEvents = await getEventsByUser({ userId, page: 1 });
+  console.log("-------------------------------");
+  console.log({ orderedEvents });
+  console.log("-------------------------------");
+  console.log(userId);
 
   return (
     <>
@@ -30,7 +34,7 @@ const ProfilePage = async () => {
 
       <section className="wrapper my-8">
         <Collection
-          data={orderedEvents?.data}
+          data={orderedEvents}
           emptyTitle="Sin eventos adquiridos todavía"
           emptyStateSubtext="Hay muchos eventos esperandote"
           collectionType="My_Tickets"

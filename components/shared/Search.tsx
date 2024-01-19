@@ -20,12 +20,12 @@ const Search = ({ placeholder = "Bucar título..." }: { placeholder?: string }) 
           key: "query",
           value: query,
         });
-      } else {
+      } /* else {
         newUrl = removeKeysFromQuery({
           params: searchParams.toString(),
           keysToRemove: ["query"],
         });
-      }
+      }*/
       router.push(newUrl, { scroll: false });
     }, 300);
     return () => clearTimeout(delayDebounceFn);

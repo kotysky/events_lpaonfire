@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Input } from "../ui/input";
 import { formUrlQuery, removeKeysFromQuery } from "@/lib/utils";
 import { useRouter, useSearchParams } from "next/navigation";
-import { RouteMatcher } from "next/dist/server/future/route-matchers/route-matcher";
 
 const Search = ({ placeholder = "Bucar título..." }: { placeholder?: string }) => {
   const [query, setQuery] = useState("");
